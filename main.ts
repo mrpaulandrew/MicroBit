@@ -2,7 +2,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("Doveridge")
 })
 input.onButtonPressed(Button.AB, function () {
-    music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
+    music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("is great!")
@@ -17,7 +17,8 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
 input.onLogoEvent(TouchButtonEvent.Released, function () {
     basic.clearScreen()
 })
-basic.showString("Hi!")
+basic.showString("Hello")
+music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
 basic.forever(function () {
     if (input.soundLevel() > 150) {
         basic.showString("Shhhh!")
